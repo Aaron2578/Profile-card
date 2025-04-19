@@ -2,7 +2,7 @@
   border: 5px solid black;
   border-radius: 30px;
   display: flex;
-  margin: 90px auto;
+  margin: 20px auto;
   width: 50%;
   padding: 25px;
   background: linear-gradient(20);
@@ -26,7 +26,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 30px;
 }
 .profile-name {
   font-size: 30px;
@@ -47,7 +47,7 @@
   font-family: "Courier New", Courier, monospace;
   font-weight: 700;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 12px;
 }
 .skillwrapper {
   display: flex;
@@ -61,8 +61,23 @@
   display: flex;
   flex-basis: 100%;
   flex-wrap: wrap;
-  padding: 8px;
+  /* padding: 5px; */
 }
+.message {
+  /* background: #000; */
+  color: blue;
+  padding: 8px 16px;
+  font-size: 20px;
+}
+.clock {
+  background: #000;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-family: monospace;
+  font-family: cursive;
+}
+
 .btn {
   background: yellow;
   padding: 12px 40px;
@@ -116,5 +131,12 @@
   .aboutPara {
     text-align: justify;
     font-size: 20px;
+  }
+  .btnGrp {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
   }
 }

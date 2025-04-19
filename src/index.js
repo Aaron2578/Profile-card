@@ -1,4 +1,4 @@
-import react from "react";
+import react, { useState, useEffect } from "react";
 import reactdom from "react-dom/client";
 import "./index.css";
 
@@ -29,6 +29,14 @@ const skillObj = [
   },
 ];
 
+const message = [
+  "Create ...",
+  "... Build ...",
+  "... Innovate ...",
+  "... Focus ...",
+  "... Grow",
+];
+
 function App() {
   return (
     <div>
@@ -50,7 +58,25 @@ function Card() {
     </div>
   );
 }
+
 function Profile() {
+  const [index, setIndex] = useState(0);
+  const [currentTime, setCurrentTime] = useState(
+    new Date().toLocaleTimeString().toLocaleUpperCase()
+  );
+  // const [step, setStep] = useState(1);
+  setInterval(() => {
+    setCurrentTime(new Date().toLocaleTimeString().toLocaleUpperCase());
+  }, 1000);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % message.length);
+    }, 3000); // change every 2 seconds
+
+    return () => clearInterval(interval); // cleanup
+  }, []);
+
   return (
     <div className="profile">
       <img
@@ -61,6 +87,13 @@ function Profile() {
       />
       <p className="profile-name">Aaron C</p>
       <p className="designation">Front-end Developer</p>
+      <p className="message">
+        {/* <span>... </span> */}
+        {message[index]}
+        {/* <span> ...</span> */}
+      </p>
+      <p className="clock">{currentTime}</p>
+      {/* <button onMouseOver={update}>Change</button> */}
     </div>
   );
 }
@@ -83,6 +116,7 @@ function Skill() {
           color={skill.color}
           level={skill.level}
           img={skill.img}
+          key={skill.skill}
         />
       ))}
     </div>
