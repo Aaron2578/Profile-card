@@ -27,6 +27,24 @@ const skillObj = [
     level: "Beginer",
     img: "React.png",
   },
+  {
+    skill: "CANVA",
+    color: "4px solid skyblue",
+    level: "Beginer",
+    img: "canva.png",
+  },
+  {
+    skill: "FIGMA",
+    color: "4px solid skyblue",
+    level: "Beginer",
+    img: "figma.png",
+  },
+  {
+    skill: "ADOBE PHOTOSHOP",
+    color: "4px solid skyblue",
+    level: "Beginer",
+    img: "photoshop.jpg",
+  },
 ];
 
 const message = [
@@ -86,7 +104,7 @@ function Profile() {
         className="profile-img"
       />
       <p className="profile-name">Aaron C</p>
-      <p className="designation">Front-end Developer</p>
+      <p className="designation">MS in Computer Science</p>
       <p className="message">
         {/* <span>... </span> */}
         {message[index]}
@@ -136,14 +154,14 @@ function Skillset({ skill, color, level, img, radius }) {
 function More() {
   return (
     <div className="btnGrp">
-      <button className="btn">
+      {/* <button className="btn">
         <a href="AARON NEW JOB RESUME.pdf" target="_blank">
           Resume
         </a>
-      </button>
+      </button> */}
       <button className="btn">
         <a href="https://aaronc.netlify.app/" rel="noreferrer" target="_blank">
-          Portfolio
+          More ...
         </a>
       </button>
     </div>
