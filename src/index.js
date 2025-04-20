@@ -186,7 +186,7 @@ function CopyRights() {
           <span>
             <img src="favicon.ico" height={"20px"} alt="react-img"></img>
           </span>
-        }
+        } React.js
       </p>
     </footer>
   );
