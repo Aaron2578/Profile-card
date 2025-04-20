@@ -172,10 +172,26 @@ function CopyRights() {
   //   console.log(getYear);
   return (
     <footer className="footer">
-      <p>&copy; Copyrights {getYear}. All rights reserved.</p>
+      <p>&copy; {getYear}. All rights reserved.</p>
+      <p
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "5px",
+        }}
+      >
+        Built with
+        {
+          <span>
+            <img src="favicon.ico" height={"20px"} alt="react-img"></img>
+          </span>
+        }
+      </p>
     </footer>
   );
 }
+
 const rootElement = document.getElementById("root");
 const root = reactdom.createRoot(rootElement);
 root.render(
