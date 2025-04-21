@@ -98,9 +98,9 @@ function Profile() {
   return (
     <div className="profile">
       <img
-        src="profile.png"
+        src="AARON PROFILE PIC.JPEG"
         alt="Profile-image"
-        width={"12%"}
+        width={"5%"}
         className="profile-img"
       />
       <p className="profile-name">Aaron C</p>
@@ -186,7 +186,8 @@ function CopyRights() {
           <span>
             <img src="favicon.ico" height={"20px"} alt="react-img"></img>
           </span>
-        } React.js
+        }{" "}
+        React.js
       </p>
     </footer>
   );
