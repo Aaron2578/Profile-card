@@ -168,11 +168,11 @@ function More() {
   );
 }
 function CopyRights() {
-  // const getYear = new Date().getFullYear();
-  //   console.log(getYear);
+  {/* const getYear = new Date().getFullYear();
+      console.log(getYear); */}
   return (
     <footer className="footer">
-      // <p>&copy; {getYear}. All rights reserved.</p>
+     {/* <p>&copy; {getYear}. All rights reserved.</p> */}
       <p
         style={{
           display: "flex",
