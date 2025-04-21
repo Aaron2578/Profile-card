@@ -1,11 +1,12 @@
 .card {
   border: 5px solid black;
   border-radius: 30px;
-  display: flex;
-  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 60px auto 0px auto;
   width: 50%;
   padding: 25px;
-  background: linear-gradient(20);
+  /* background: linear-gradient(20); */
 }
 .profile {
   display: flex;
@@ -15,24 +16,26 @@
 .profile-img {
   /* background: #000; */
   display: flex;
-  width: 100%;
+  width: 50%;
+  border-radius: 50%;
+  margin-top: 20px;
 }
 .aboutPara {
   text-align: justify;
-  font-size: 26px;
+  font-size: 20px;
   line-height: 1.6em;
 }
 .about_skillwrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 10px;
 }
 .profile-name {
   font-size: 30px;
   font-family: cursive;
   padding: 0px;
-  margin: 0px;
+  margin: 10px;
 }
 .designation {
   font-family: cursive;
