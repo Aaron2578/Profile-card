@@ -104,7 +104,7 @@ function Profile() {
         className="profile-img"
       />
       <p className="profile-name">Aaron C</p>
-      <p className="designation">MS in Computer Science</p>
+      <p className="designation">Front-end Developer</p>
       <p className="message">
         {/* <span>... </span> */}
         {message[index]}
