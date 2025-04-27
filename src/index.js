@@ -1,6 +1,8 @@
 import react, { useState, useEffect } from "react";
 import reactdom from "react-dom/client";
 import "./index.css";
+import { FaLinkedin, FaGithub} from "react-icons/fa";
+import { MdMail } from "react-icons/md";
 
 const skillObj = [
   {
@@ -44,6 +46,12 @@ const skillObj = [
     color: "4px solid skyblue",
     level: "Beginer",
     img: "photoshop.jpg",
+  },
+  {
+    skill: "ADOBE ILLUSTRATOR",
+    color: "4px solid orange",
+    level: "Beginer",
+    img: "AI.jpg",
   },
 ];
 
@@ -110,6 +118,32 @@ function Profile() {
         {message[index]}
         {/* <span> ...</span> */}
       </p>
+      <div className="social-icon">
+        <a
+          href="https://www.linkedin.com/in/aaron-dev"
+          target="_blank"
+          rel="noreferrer"
+          style={{ color: "#0A66C2", fontSize: "25px", transition: "0.3s" }}
+        >
+          <FaLinkedin />
+        </a>
+        <a
+          href="https://github.com/Aaron2578"
+          target="_blank"
+          rel="noreferrer"
+          style={{ color: "#000", fontSize: "25px", transition: "0.3s" }}
+        >
+          <FaGithub />
+        </a>
+        <a
+          href="mailto:aaronc2578@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+          style={{ color: "red", fontSize: "25px", transition: "0.3s" }}
+        >
+          <MdMail />
+        </a>
+      </div>
       <p className="clock">{currentTime}</p>
       {/* <button onMouseOver={update}>Change</button> */}
     </div>
@@ -146,7 +180,7 @@ function Skillset({ skill, color, level, img, radius }) {
     <div className="skillwrapper" style={{}}>
       {/* <span>{skill}</span> */}
       <span>
-        <img src={img} alt="" height={"50px"} />
+        <img src={img} alt="" height={"45px"} />
       </span>
     </div>
   );
@@ -159,7 +193,7 @@ function More() {
           Resume
         </a>
       </button> */}
-      <button className="btn">
+      <button className="btn" href="https://aaronc.netlify.app/">
         <a href="https://aaronc.netlify.app/" rel="noreferrer" target="_blank">
           More ...
         </a>
